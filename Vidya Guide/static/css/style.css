@@ -1,0 +1,274 @@
+/* ==================== GLOBAL ==================== */
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ==================== BACKGROUND IMAGES ==================== */
+
+.dashboard-bg {
+    background: linear-gradient(
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)
+    ), 
+    url('https://babafaridgroup.edu.in/assets/img/bfgi/free-career-guidance.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
+.chat-bg {
+    background: linear-gradient(
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0.55)
+    ),
+    url('https://wp.sfdcdigital.com/en-us/wp-content/uploads/sites/4/2025/03/marquee-agentforce-ai-chatbot.png') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
+/* ==================== NAVBAR ==================== */
+
+.nav {
+    background: rgba(74, 99, 255, 0.9);
+    padding: 18px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+    backdrop-filter: blur(6px);
+}
+
+.nav h2 {
+    margin: 0;
+    font-size: 22px;
+}
+
+/* Chatbot & Dashboard Buttons */
+.chat-btn {
+    background: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: #4a63ff;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid white;
+    transition: 0.2s;
+}
+
+.chat-btn:hover {
+    background: #334bff;
+    color: white;
+    border-color: #334bff;
+}
+
+/* ==================== UPLOAD CARD ==================== */
+
+.upload-section {
+    width: 55%;
+    margin: 80px auto;
+    background: rgba(255,255,255,0.92);
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0px 6px 25px rgba(0,0,0,0.3);
+    text-align: center;
+    backdrop-filter: blur(6px);
+}
+
+.upload-section h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+/* File input */
+.upload-section input[type="file"] {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+}
+
+/* Button */
+.upload-btn {
+    background: #4a63ff;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 15px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.upload-btn:hover {
+    background: #374ed4;
+}
+
+/* ==================== CHATBOT PAGE ==================== */
+
+.chat-container {
+    width: 60%;
+    margin: 50px auto;
+    background: rgba(255,255,255,0.92);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 25px rgba(0,0,0,0.4);
+    backdrop-filter: blur(8px);
+}
+
+.chat-container h2 {
+    text-align: center;
+    margin-top: 0;
+    color: #333;
+}
+
+.chat-box {
+    height: 400px;
+    overflow-y: scroll;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background: #fafafa;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Chat bubbles */
+.user-msg {
+    text-align: right;
+    color: #333;
+    margin: 10px 0;
+    padding: 10px 14px;
+    background: #d7e3ff;
+    border-radius: 10px;
+    display: inline-block;
+    max-width: 60%;
+}
+
+.ai-msg {
+    text-align: left;
+    color: #4a63ff;
+    margin: 10px 0;
+    padding: 10px 14px;
+    background: #e9ebff;
+    border-radius: 10px;
+    display: inline-block;
+    max-width: 60%;
+    font-weight: bold;
+}
+
+/* Input area */
+.chat-input {
+    display: flex;
+    gap: 10px;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.chat-send {
+    background: #4a63ff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.chat-send:hover {
+    background: #374ed4;
+}
+/* ==================== RESULT PAGE BACKGROUND ==================== */
+
+.result-bg {
+    background: linear-gradient(
+        rgba(0,0,0,0.40),
+        rgba(0,0,0,0.40)
+    ), 
+    url('https://babafaridgroup.edu.in/assets/img/bfgi/free-career-guidance.jpg')
+    no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
+/* ==================== RESULT PAGE LAYOUT ==================== */
+
+.results-container {
+    width: 70%;
+    margin: 50px auto;
+    padding-top: 20px;
+}
+
+.result-title {
+    text-align: center;
+    font-size: 32px;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-shadow: 0px 3px 10px rgba(0,0,0,0.4);
+}
+
+/* ==================== RESULT CARDS ==================== */
+
+.result-card {
+    background: rgba(255,255,255,0.92);
+    padding: 25px;
+    margin: 25px 0;
+    border-radius: 18px;
+    box-shadow: 0px 6px 20px rgba(0,0,0,0.25);
+    backdrop-filter: blur(7px);
+}
+
+.result-card h3 {
+    margin-top: 0;
+    font-size: 22px;
+    color: #333;
+}
+
+.result-card h2 {
+    color: #4a63ff;
+    margin-top: 0;
+}
+
+.result-card ul {
+    padding-left: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+.result-card p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* ==================== BACK BUTTON ==================== */
+
+.back-btn {
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    background: #4a63ff;
+    padding: 12px 35px;
+    text-decoration: none;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.25s ease-in-out;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.25);
+}
+
+.back-btn:hover {
+    background: #374ed4;
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 18px rgba(0,0,0,0.35);
+}

@@ -1,0 +1,6 @@
+Flask
+Flask-CORS
+python-dotenv
+groq
+PyPDF2
+Werkzeug

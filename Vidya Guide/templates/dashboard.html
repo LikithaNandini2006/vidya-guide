@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VidyaGuide Dashboard</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body class="dashboard-bg">
+
+<!-- NAVBAR -->
+<div class="nav">
+    <h2>📘 VidyaGuide Dashboard</h2>
+    <a href="/chat" class="chat-btn">AI Chatbot 🤖</a>
+</div>
+
+<!-- UPLOAD SECTION -->
+<div class="upload-section">
+    <h3>Upload Your Resume (PDF)</h3>
+
+    <form action="/analyze" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept="application/pdf" required>
+        <button type="submit" class="upload-btn">Analyze Resume</button>
+    </form>
+</div>
+
+</body>
+</html>

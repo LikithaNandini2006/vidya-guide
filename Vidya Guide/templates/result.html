@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Analysis Result</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body class="result-bg">
+
+<div class="results-container">
+
+    <h1 class="result-title">Your Resume Analysis</h1>
+
+    <div class="result-card">
+        <h2>🎯 Resume Score: {{ data.score }}/100</h2>
+    </div>
+
+    <div class="result-card">
+        <h3>💪 Strengths</h3>
+        <ul>
+            {% for s in data.strengths %}
+                <li>{{ s }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="result-card">
+        <h3>⚠ Weaknesses</h3>
+        <ul>
+            {% for w in data.weaknesses %}
+                <li>{{ w }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="result-card">
+        <h3>📌 Missing Skills (Skill Gap Analyzer)</h3>
+        <ul>
+            {% for m in data.skills_missing %}
+                <li>{{ m }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="result-card">
+        <h3>🎯 Best Job Roles for You</h3>
+        <ul>
+            {% for j in data.job_roles %}
+                <li>{{ j }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="result-card">
+        <h3>🚀 Career Path Recommendations</h3>
+        <ul>
+            {% for c in data.career_paths %}
+                <li>{{ c }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="result-card">
+        <h3>🗓 6-Month Roadmap</h3>
+        <ul>
+            {% for r in data.roadmap_6m %}
+                <li>{{ r }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="result-card">
+        <h3>🗓 12-Month Roadmap</h3>
+        <ul>
+            {% for r in data.roadmap_12m %}
+                <li>{{ r }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="result-card">
+        <h3>🎤 Interview Questions</h3>
+        <ul>
+            {% for q in data.interview_questions %}
+                <li>{{ q }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="result-card">
+        <h3>📝 Professional Summary</h3>
+        <p>{{ data.summary }}</p>
+    </div>
+
+    <a href="/dashboard" class="back-btn">Analyze Another Resume</a>
+</div>
+
+</body>
+</html>
